@@ -4,3 +4,68 @@
   font-size: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Garamond";
+  src: url(../fonts/EBGaramond-Regular.ttf);
+}
+@font-face {
+  font-family: "Garamond";
+  src: url(../fonts/EBGaramond-Bold.ttf);
+  font-weight: 700;
+}
+body {
+  background-image: url(../picture/bg_img.webp);
+  // margin: 0 auto;
+}
+.header {
+  padding-top: 50px;
+  width: calc(100% - 30px);
+  display: flex;
+  margin: 0 auto;
+  &__img {
+    width: calc(100% / 3);
+    padding: 10px;
+    border: 10px solid rgb(127, 104, 89);
+  }
+  &__foto {
+    width: 100%;
+    // object-fit: cover;
+  }
+  &__container {
+    width: calc(100% / 3 * 2);
+  }
+  &__title {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    &_name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &_contact {
+      display: flex;
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  &__jobtitle {
+    font-size: 18px;
+  }
+  &__location {
+    font-size: 16px;
+  }
+  &__phone {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__email {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__qrcode {
+    width: 30%;
+  }
+}

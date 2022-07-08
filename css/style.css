@@ -4,4 +4,53 @@
   font-size: 0;
   box-sizing: border-box; }
 
+@font-face {
+  font-family: "Garamond";
+  src: url(../fonts/EBGaramond-Regular.ttf); }
+@font-face {
+  font-family: "Garamond";
+  src: url(../fonts/EBGaramond-Bold.ttf);
+  font-weight: 700; }
+body {
+  background-image: url(../picture/bg_img.webp); }
+
+.header {
+  padding-top: 50px;
+  width: calc(100% - 30px);
+  display: flex;
+  margin: 0 auto; }
+  .header__img {
+    width: calc(100% / 3);
+    padding: 10px;
+    border: 10px solid #7f6859; }
+  .header__foto {
+    width: 100%; }
+  .header__container {
+    width: calc(100% / 3 * 2); }
+  .header__title {
+    width: 70%;
+    display: flex;
+    flex-direction: column; }
+    .header__title_name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+    .header__title_contact {
+      display: flex; }
+  .header__name {
+    font-weight: 700;
+    font-size: 24px; }
+  .header__jobtitle {
+    font-size: 18px; }
+  .header__location {
+    font-size: 16px; }
+  .header__phone {
+    font-weight: 700;
+    font-size: 18px; }
+  .header__email {
+    font-weight: 700;
+    font-size: 18px; }
+  .header__qrcode {
+    width: 30%; }
+
 /*# sourceMappingURL=style.css.map */
