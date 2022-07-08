@@ -20,15 +20,17 @@ body {
   display: flex;
   margin: 0 auto; }
   .header__img {
-    width: calc(100% / 3);
+    width: 30%;
     padding: 10px;
     border: 10px solid #7f6859; }
   .header__foto {
     width: 100%; }
   .header__container {
-    width: calc(100% / 3 * 2); }
-  .header__title {
     width: 70%;
+    display: flex; }
+  .header__title {
+    width: 80%;
+    margin: 0 10px;
     display: flex;
     flex-direction: column; }
     .header__title_name {
@@ -36,21 +38,29 @@ body {
       flex-direction: column;
       align-items: flex-end; }
     .header__title_contact {
-      display: flex; }
+      display: flex;
+      justify-content: space-between; }
   .header__name {
     font-weight: 700;
-    font-size: 24px; }
+    font-size: 42px;
+    color: #7f6859; }
   .header__jobtitle {
-    font-size: 18px; }
+    font-size: 24px;
+    color: #7f6859; }
   .header__location {
-    font-size: 16px; }
+    font-size: 18px;
+    color: #7f6859; }
   .header__phone {
     font-weight: 700;
-    font-size: 18px; }
+    font-size: 16px;
+    color: #7f6859; }
   .header__email {
     font-weight: 700;
-    font-size: 18px; }
+    font-size: 16px;
+    color: #7f6859; }
   .header__qrcode {
-    width: 30%; }
+    width: 100%; }
+    .header__qrcode_img {
+      width: 20%; }
 
 /*# sourceMappingURL=style.css.map */

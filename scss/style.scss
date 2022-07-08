@@ -23,7 +23,7 @@ body {
   display: flex;
   margin: 0 auto;
   &__img {
-    width: calc(100% / 3);
+    width: 30%;
     padding: 10px;
     border: 10px solid rgb(127, 104, 89);
   }
@@ -32,10 +32,12 @@ body {
     // object-fit: cover;
   }
   &__container {
-    width: calc(100% / 3 * 2);
+    width: 70%;
+    display: flex;
   }
   &__title {
-    width: 70%;
+    width: 80%;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     &_name {
@@ -45,27 +47,37 @@ body {
     }
     &_contact {
       display: flex;
+      justify-content: space-between;
     }
   }
   &__name {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 42px;
+    color: rgb(127, 104, 89);
+    
   }
   &__jobtitle {
-    font-size: 18px;
+    font-size: 24px;
+    color: rgb(127, 104, 89);
   }
   &__location {
-    font-size: 16px;
+    font-size: 18px;
+    color: rgb(127, 104, 89);
   }
   &__phone {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
+    color: rgb(127, 104, 89);
   }
   &__email {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
+    color: rgb(127, 104, 89);
   }
   &__qrcode {
-    width: 30%;
+    width: 100%;
+    &_img {
+      width: 20%;
+    }
   }
 }
