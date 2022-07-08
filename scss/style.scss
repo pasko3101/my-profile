@@ -3,6 +3,7 @@
   padding: 0;
   font-size: 0;
   box-sizing: border-box;
+  color: rgb(127, 104, 89);
 }
 @font-face {
   font-family: "Garamond";
@@ -34,12 +35,14 @@ body {
   &__container {
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
   }
   &__title {
-    width: 80%;
+    width: calc(80% - 20px);
     margin: 0 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     &_name {
       display: flex;
       flex-direction: column;
@@ -53,31 +56,73 @@ body {
   &__name {
     font-weight: 700;
     font-size: 42px;
-    color: rgb(127, 104, 89);
-    
+    text-transform: uppercase;
   }
   &__jobtitle {
     font-size: 24px;
-    color: rgb(127, 104, 89);
   }
   &__location {
     font-size: 18px;
-    color: rgb(127, 104, 89);
   }
-  &__phone {
-    font-weight: 700;
-    font-size: 16px;
-    color: rgb(127, 104, 89);
-  }
-  &__email {
-    font-weight: 700;
-    font-size: 16px;
-    color: rgb(127, 104, 89);
-  }
+
   &__qrcode {
     width: 100%;
     &_img {
       width: 20%;
     }
   }
+  &__profile {
+    width: calc(100% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  &__birth {
+    width: 100%;
+    display: flex;
+    // margin: 0 10px;
+  }
+  &__text {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  &__date {
+    font-size: 16px;
+  }
+}
+.points {
+  flex-grow: 1;
+  // font-size: 16px;
+  // color: rgb(127, 104, 89);
+}
+.bg__color {
+  width: 100%;
+  background: rgba(127, 104, 89, 0.3);
+}
+.title__text {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 5px 0;
+  text-align: center;
+}
+.link__hover {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  &:hover {
+    color: rgb(134, 6, 6);
+    // box-shadow: 0 0 5px rgb(127, 104, 89);
+  }
+}
+.list__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile__text {
+  font-size: 16px;
+  text-indent: 20px;
 }

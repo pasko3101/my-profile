@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   font-size: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #7f6859; }
 
 @font-face {
   font-family: "Garamond";
@@ -27,12 +28,14 @@ body {
     width: 100%; }
   .header__container {
     width: 70%;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
   .header__title {
-    width: 80%;
+    width: calc(80% - 20px);
     margin: 0 10px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-between; }
     .header__title_name {
       display: flex;
       flex-direction: column;
@@ -43,24 +46,59 @@ body {
   .header__name {
     font-weight: 700;
     font-size: 42px;
-    color: #7f6859; }
+    text-transform: uppercase; }
   .header__jobtitle {
-    font-size: 24px;
-    color: #7f6859; }
+    font-size: 24px; }
   .header__location {
-    font-size: 18px;
-    color: #7f6859; }
-  .header__phone {
-    font-weight: 700;
-    font-size: 16px;
-    color: #7f6859; }
-  .header__email {
-    font-weight: 700;
-    font-size: 16px;
-    color: #7f6859; }
+    font-size: 18px; }
   .header__qrcode {
     width: 100%; }
     .header__qrcode_img {
       width: 20%; }
+  .header__profile {
+    width: calc(100% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+  .header__birth {
+    width: 100%;
+    display: flex; }
+  .header__text {
+    font-size: 16px;
+    white-space: nowrap; }
+  .header__date {
+    font-size: 16px; }
+
+.points {
+  flex-grow: 1; }
+
+.bg__color {
+  width: 100%;
+  background: rgba(127, 104, 89, 0.3); }
+
+.title__text {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 5px 0;
+  text-align: center; }
+
+.link__hover {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  cursor: pointer; }
+  .link__hover:hover {
+    color: #860606; }
+
+.list__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; }
+
+.profile__text {
+  font-size: 16px;
+  text-indent: 20px; }
 
 /*# sourceMappingURL=style.css.map */
