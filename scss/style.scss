@@ -99,7 +99,9 @@ body {
     width: 100%;
     display: flex;
     margin-bottom: 5px;
-    // margin: 0 10px;
+    @media screen and (min-width: 940px) {
+      width: 80%;
+    }
   }
   &__text {
     font-size: 16px;
@@ -124,7 +126,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
-  margin: 5px 0;
+  margin-top: 5px;
   text-align: center;
 }
 .link__hover {
@@ -152,4 +154,77 @@ body {
 main {
   width: calc(100% - 30px);
   margin: 0 auto;
+}
+.employ {
+  margin: 10px 0;
+  &__jobtitle {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+  }
+  &__location {
+    width: 100%;
+    font-size: 16px;
+    text-align: right;
+  }
+}
+.jobtitle {
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    margin-left: 25px;
+    &_margin {
+      margin-bottom: 10px;
+    }
+  }
+  &__date {
+    font-size: 16px;
+  }
+  &__description {
+    width: 95%;
+    font-size: 16px;
+    text-indent: 20px;
+  }
+}
+.list__before {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    border: 4px dotted rgb(127, 104, 89);
+    transform: rotate(45deg);
+  }
+}
+.point__before {
+  margin-left: 30px;
+  // margin-bottom: 1px;
+  text-indent: 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(127, 104, 89, 0.8);
+  }
+}
+.location {
+  &_relative {
+    position: relative;
+  }
+  &_absolute {
+    position: absolute;
+    top: -33px;
+    left: 0;
+  }
 }
