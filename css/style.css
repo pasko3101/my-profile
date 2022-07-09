@@ -16,10 +16,9 @@ body {
   background-image: url(../picture/bg_img.webp); }
 
 .header {
-  padding-top: 50px;
   width: calc(100% - 30px);
   display: flex;
-  margin: 0 auto; }
+  margin: 10px auto; }
   .header__img {
     display: flex;
     align-items: baseline;
@@ -49,10 +48,18 @@ body {
     .header__title_name {
       display: flex;
       flex-direction: column;
-      align-items: flex-end; }
+      align-items: flex-end;
+      text-align: right; }
     .header__title_contact {
       display: flex;
-      justify-content: space-between; }
+      flex-direction: column;
+      align-items: center;
+      margin: 5px auto; }
+      @media screen and (min-width: 500px) {
+        .header__title_contact {
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0; } }
   .header__name {
     font-weight: 700;
     font-size: 42px;
@@ -92,8 +99,16 @@ body {
 
 .points {
   flex-grow: 1;
-  margin: 0 2px;
-  border-bottom: 2px dotted #7f6859; }
+  margin: 0 5px;
+  position: relative; }
+  .points::before {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 2px dotted #7f6859; }
 
 .bg__color {
   width: 100%;
@@ -103,7 +118,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin: 5px 0;
   text-align: center; }
 
 .link__hover {
@@ -119,7 +134,8 @@ body {
 .list__link {
   width: 100%;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin: 5px 0; }
 
 .profile__text {
   font-size: 16px;
@@ -130,7 +146,7 @@ main {
   margin: 0 auto; }
 
 .employ {
-  margin: 10px 0; }
+  padding: 1px 0; }
   .employ__jobtitle {
     width: 100%;
     display: flex;
@@ -143,12 +159,19 @@ main {
 .jobtitle__text {
   font-weight: 700;
   font-size: 16px;
-  white-space: nowrap;
-  margin-left: 25px; }
+  margin-left: 25px;
+  max-width: 100px; }
+  @media screen and (min-width: 500px) {
+    .jobtitle__text {
+      max-width: 245px; } }
+  @media screen and (min-width: 670px) {
+    .jobtitle__text {
+      max-width: 400px; } }
   .jobtitle__text_margin {
     margin-bottom: 10px; }
 .jobtitle__date {
-  font-size: 16px; }
+  font-size: 16px;
+  text-align: right; }
 .jobtitle__description {
   width: 95%;
   font-size: 16px;
@@ -181,12 +204,5 @@ main {
     height: 8px;
     border-radius: 50%;
     background: rgba(127, 104, 89, 0.8); }
-
-.location_relative {
-  position: relative; }
-.location_absolute {
-  position: absolute;
-  top: -33px;
-  left: 0; }
 
 /*# sourceMappingURL=style.css.map */
