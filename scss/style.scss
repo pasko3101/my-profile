@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 680px) {
       width: calc(80% - 20px);
     }
     &_name {
@@ -86,13 +86,13 @@ body {
   &__qrcode {
     width: 100%;
     display: none;
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 680px) {
       display: block;
     }
 
     &_img {
       width: 0;
-      @media screen and (min-width: 940px) {
+      @media screen and (min-width: 680px) {
         width: 20%;
       }
     }
@@ -107,7 +107,7 @@ body {
     width: 100%;
     display: flex;
     margin-bottom: 5px;
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 680px) {
       width: 80%;
     }
   }
@@ -174,17 +174,13 @@ main {
   width: calc(100% - 30px);
   margin: 0 auto;
 }
-.employ {
+.title {
   padding: 1px 0;
+  margin-top: 15px;
   &__jobtitle {
     width: 100%;
     display: flex;
     margin-top: 15px;
-  }
-  &__location {
-    width: 100%;
-    font-size: 16px;
-    text-align: right;
   }
 }
 .jobtitle {
@@ -197,7 +193,10 @@ main {
       max-width: 245px;
     }
     @media screen and (min-width: 670px) {
-      max-width: 400px;
+      max-width: 300px;
+    }
+    @media screen and (min-width: 750px) {
+      max-width: 455px;
     }
     &_margin {
       margin-bottom: 10px;
@@ -241,5 +240,19 @@ main {
     height: 8px;
     border-radius: 50%;
     background: rgba(127, 104, 89, 0.8);
+  }
+}
+.degree__location {
+  display: flex;
+
+  justify-content: space-between;
+}
+.education {
+  &__degree {
+    font-size: 16px;
+    font-style: italic;
+  }
+  &__location {
+    font-size: 16px;
   }
 }
